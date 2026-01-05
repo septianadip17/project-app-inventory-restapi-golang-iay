@@ -3,8 +3,8 @@ package config
 import "github.com/spf13/viper"
 
 type Config struct {
-	DBUrl      string `mapstructure:"DB_URL"`
 	ServerPort string `mapstructure:"SERVER_PORT"`
+	DBUrl      string `mapstructure:"DB_URL"`
 }
 
 func LoadConfig() (*Config, error) {
